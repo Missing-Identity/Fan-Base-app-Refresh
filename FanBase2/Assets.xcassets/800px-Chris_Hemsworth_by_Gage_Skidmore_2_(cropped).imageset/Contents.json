@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "800px-Chris_Hemsworth_by_Gage_Skidmore_2_(cropped)@1x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "800px-Chris_Hemsworth_by_Gage_Skidmore_2_(cropped)@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "800px-Chris_Hemsworth_by_Gage_Skidmore_2_(cropped)@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
