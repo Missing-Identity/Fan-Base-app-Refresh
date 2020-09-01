@@ -17,6 +17,20 @@ class DataService {
         Movies(title: "The Imitation Game")
     ]
     
+    private let avengersimage = [
+        Images(imageName: "Avengers.jpg"),
+        Images(imageName: "Chad.png"),
+        Images(imageName: "Evans.png"),
+        Images(imageName: "Hems.png"),
+        Images(imageName: "Rudd.png"),
+        Images(imageName: "Rdj.png")
+    ]
+    
+    func getAvengersImages() -> [Images] {
+        
+        return avengersimage
+    }
+    
     func getMovtitle() -> [Movies] {
         
         return movtitle

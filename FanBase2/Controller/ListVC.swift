@@ -40,6 +40,5 @@ class ListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         }
     }
 
-
 }
 
