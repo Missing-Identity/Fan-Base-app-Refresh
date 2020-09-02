@@ -8,14 +8,8 @@
 
 import UIKit
 
-class MovieCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+class MovieCell: UITableViewCell {
     
-    @IBOutlet weak var movieName: UILabel!
-
-    func updateViews(movtitle: Movies) {
-        
-        movieName.text = movtitle.title
-        
-    }
+    
 
 }

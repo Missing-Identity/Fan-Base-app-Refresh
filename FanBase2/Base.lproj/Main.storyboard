@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,90 +14,10 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-Ye-eSC">
-                                <rect key="frame" x="0.0" y="188" width="414" height="708"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="180" id="wk8-eP-bFP" customClass="MovieCell" customModule="FanBase2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="180"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wk8-eP-bFP" id="saW-jq-SIW">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNo-h1-7OA">
-                                                    <rect key="frame" x="20" y="11" width="374" height="23.5"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eoc-Uk-8Tm">
-                                                    <rect key="frame" x="0.0" y="39.5" width="414" height="137.5"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3Wa-Qb-4Iq">
-                                                        <size key="itemSize" width="245" height="128"/>
-                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                    </collectionViewFlowLayout>
-                                                    <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="b8N-Up-6Ky" customClass="ImageCell" customModule="FanBase2" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="5" width="245" height="128"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dsS-VO-iiq">
-                                                                <rect key="frame" x="0.0" y="0.0" width="245" height="128"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avengers" translatesAutoresizingMaskIntoConstraints="NO" id="ILF-D0-DaS">
-                                                                        <rect key="frame" x="5" y="0.0" width="235" height="128"/>
-                                                                    </imageView>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="trailing" secondItem="ILF-D0-DaS" secondAttribute="trailing" constant="5" id="1gY-Mb-J9t"/>
-                                                                    <constraint firstItem="ILF-D0-DaS" firstAttribute="top" secondItem="dsS-VO-iiq" secondAttribute="top" id="4wg-uf-179"/>
-                                                                    <constraint firstItem="ILF-D0-DaS" firstAttribute="leading" secondItem="dsS-VO-iiq" secondAttribute="leading" constant="5" id="VfJ-hN-kIu"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="ILF-D0-DaS" secondAttribute="bottom" id="ujw-sB-1lm"/>
-                                                                </constraints>
-                                                            </collectionViewCellContentView>
-                                                            <size key="customSize" width="245" height="128"/>
-                                                            <connections>
-                                                                <outlet property="movieImage" destination="ILF-D0-DaS" id="937-Td-fws"/>
-                                                            </connections>
-                                                        </collectionViewCell>
-                                                    </cells>
-                                                </collectionView>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="eoc-Uk-8Tm" firstAttribute="top" secondItem="CNo-h1-7OA" secondAttribute="bottom" constant="5" id="QWF-vK-8RT"/>
-                                                <constraint firstAttribute="bottom" secondItem="eoc-Uk-8Tm" secondAttribute="bottom" constant="3" id="Tab-iG-lvf"/>
-                                                <constraint firstAttribute="trailing" secondItem="eoc-Uk-8Tm" secondAttribute="trailing" id="fog-eE-uIl"/>
-                                                <constraint firstItem="CNo-h1-7OA" firstAttribute="leading" secondItem="saW-jq-SIW" secondAttribute="leadingMargin" id="g7T-kI-6Le"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="CNo-h1-7OA" secondAttribute="trailing" id="gME-F7-lxR"/>
-                                                <constraint firstItem="eoc-Uk-8Tm" firstAttribute="leading" secondItem="saW-jq-SIW" secondAttribute="leading" id="kq8-e8-p6a"/>
-                                                <constraint firstItem="CNo-h1-7OA" firstAttribute="top" secondItem="saW-jq-SIW" secondAttribute="topMargin" id="osL-03-xUA"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="movieName" destination="CNo-h1-7OA" id="A8a-LU-ZWh"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="lNa-Ye-eSC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4b0-Tk-AJU"/>
-                            <constraint firstAttribute="bottom" secondItem="lNa-Ye-eSC" secondAttribute="bottom" id="O0Z-5Q-GTX"/>
-                            <constraint firstItem="lNa-Ye-eSC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pkK-ym-3Sh"/>
-                            <constraint firstItem="lNa-Ye-eSC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="zrG-1x-1VV"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="KIw-yl-AG0"/>
-                    <connections>
-                        <outlet property="movieTable" destination="lNa-Ye-eSC" id="EMl-SN-ZJA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,7 +46,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Avengers" width="1920" height="1080"/>
-    </resources>
 </document>

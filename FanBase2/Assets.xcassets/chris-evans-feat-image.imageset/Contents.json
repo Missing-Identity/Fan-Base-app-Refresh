@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "chris-evans-feat-image@1x.png",
+      "filename" : "chris-evans-feat-image.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "chris-evans-feat-image@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "chris-evans-feat-image@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

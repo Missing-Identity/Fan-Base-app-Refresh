@@ -9,10 +9,5 @@
 import UIKit
 
 class ImageCell: UICollectionViewCell {
-    @IBOutlet weak var movieImage: UIImageView!
     
-    func updateViews(movieImg: Images) {
-        
-        movieImage.image = UIImage(named: movieImg.imageName)
-    }
 }
