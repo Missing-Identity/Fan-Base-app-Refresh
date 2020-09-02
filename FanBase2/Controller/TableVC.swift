@@ -12,10 +12,13 @@ class TableVC: UITableViewController {
 
     @IBOutlet weak var moviesTableView: UITableView!
     
+    @IBOutlet weak var navItem: UINavigationItem!
+    
     var movies = [Movie]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navItem.title = "FanBase"
         loadSampleMovies()
         moviesTableView.rowHeight = 275
         moviesTableView.estimatedRowHeight = 275
@@ -57,6 +60,10 @@ class TableVC: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let barBtn = UIBarButtonItem()
+        barBtn.title = ""
+        navigationItem.backBarButtonItem = barBtn
+        
         if let profileVC = segue.destination as? ListVC {
             assert(sender as? Actor != nil)
             profileVC.initInfo(actor: sender as! Actor)
