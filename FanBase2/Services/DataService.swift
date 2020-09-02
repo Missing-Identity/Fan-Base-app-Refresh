@@ -26,7 +26,7 @@ class DataService {
     
     func getActors(forTitle: String) -> [Actor] {
         var movieActors = [Actor]()
-        if forTitle == "Avenger: Endgame" {
+        if forTitle == "Avengers: Endgame" {
             movieActors = avengers
         }
         

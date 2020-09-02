@@ -38,9 +38,9 @@ class TableVC: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellIdentifier = "MovieTableViewCell"
+//        let cellIdentifier = "MovieTableViewCell"
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MovieTableViewCell  else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell", for: indexPath) as? MovieTableViewCell  else {
             fatalError()
         }
         
@@ -50,10 +50,6 @@ class TableVC: UITableViewController {
         cell.updateViews(movie: movie, sender: self)
         return cell
     }
-    
-    
-    
-    
     
     private func loadSampleMovies() {
         
