@@ -8,9 +8,19 @@
 
 import UIKit
 
-class ListVC: UIViewController {
-
+class ListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
-
+    @IBOutlet weak var movieTable: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        movieTable.delegate = self
+        movieTable.dataSource = self
+        
+    }
+    
+    
+    
 }
 
