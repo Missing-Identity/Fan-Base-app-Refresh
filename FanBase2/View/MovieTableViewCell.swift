@@ -36,7 +36,7 @@ class MovieTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectio
    
    
    func initActors(movie: Movie) {
-       actors = DataService.instance.getActors(forTitle: movie.title)
+    actors = DataService.instance.getActors(forTitle: movie.title)
    }
    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
        actors.count
