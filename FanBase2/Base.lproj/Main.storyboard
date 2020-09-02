@@ -145,8 +145,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="800px-Robert_Downey_Jr_2014_Comic_Con_(cropped)" translatesAutoresizingMaskIntoConstraints="NO" id="jfA-oo-yuU">
                                 <rect key="frame" x="67" y="182" width="281" height="350"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="281" id="cvc-SM-qJE"/>
-                                    <constraint firstAttribute="height" constant="350" id="rau-TF-SZL"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="281" id="cvc-SM-qJE"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="350" id="rau-TF-SZL"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -185,6 +185,9 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.10896893695336474" blue="0.19924013233475979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
