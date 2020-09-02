@@ -8,19 +8,31 @@
 
 import UIKit
 
-class ListVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
+class ListVC: UIViewController {
     
-    @IBOutlet weak var movieTable: UITableView!
+    @IBOutlet weak var actorImg: UIImageView!
+    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var infoLbl: UILabel!
+    
+    var name = ""
+    var image = ""
+    var bio = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        movieTable.delegate = self
-        movieTable.dataSource = self
-        
+        actorImg.image = UIImage(named: image)
+        nameLbl.text = name
+        infoLbl.text = bio
+
+        // Do any additional setup after loading the view.
     }
     
-    
+    func initInfo(actor: Actor) {
+        name = actor.name
+        image = actor.imageName
+        bio = actor.generalInfo
+    }
     
 }
 

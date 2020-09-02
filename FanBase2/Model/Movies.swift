@@ -8,13 +8,14 @@
 
 import Foundation
 
-struct  Movies {
+struct Movie {
     
-    private(set) public var title: String
+private(set) public var title: String
+private(set) public var actors: [Actor]
+
+init(title: String, actors: [Actor]) {
+    self.title = title
+    self.actors = actors
+}
     
-    init(title: String) {
-        
-        self.title = title
-        
-    }
 }
